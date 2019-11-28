@@ -139,7 +139,7 @@ namespace THREE_IN_A_ROW
 
                     (Board[0, 0] == Board[1, 0] && Board[1, 0] == Board[2, 0] && Board[2, 0] == "X") || //vertical
                     (Board[0, 1] == Board[1, 1] && Board[1, 1] == Board[2, 1] && Board[2, 1] == "X") ||
-                    (Board[0, 2] == Board[1, 2] && Board[1, 1] == Board[2, 2] && Board[2, 2] == "X") ||
+                    (Board[0, 2] == Board[1, 2] && Board[1, 2] == Board[2, 2] && Board[2, 2] == "X") ||
 
                     (Board[0, 0] == Board[1, 1] && Board[1, 1] == Board[2, 2] && Board[2, 2] == "X") || //diagonal
                     (Board[2, 0] == Board[1, 1] && Board[1, 1] == Board[0, 2] && Board[0, 2] == "X"))
@@ -156,7 +156,7 @@ namespace THREE_IN_A_ROW
 
                     (Board[0, 0] == Board[1, 0] && Board[1, 0] == Board[2, 0] && Board[2, 0] == "O") || //vertical
                     (Board[0, 1] == Board[1, 1] && Board[1, 1] == Board[2, 1] && Board[2, 1] == "O") ||
-                    (Board[0, 2] == Board[1, 2] && Board[1, 1] == Board[2, 2] && Board[2, 2] == "O") ||
+                    (Board[0, 2] == Board[1, 2] && Board[1, 2] == Board[2, 2] && Board[2, 2] == "O") ||
 
                     (Board[0, 0] == Board[1, 1] && Board[1, 1] == Board[2, 2] && Board[2, 2] == "O") || //diagonal
                     (Board[2, 0] == Board[1, 1] && Board[1, 1] == Board[0, 2] && Board[0, 2] == "O"))
