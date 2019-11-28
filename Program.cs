@@ -133,15 +133,15 @@ namespace THREE_IN_A_ROW
                 }
 
                 //code to check for winning three in a row
-                if ((Board[0, 0] == Board[0, 1] && Board[0, 1] == Board[0, 2] && Board[0, 2] == "X") ||
+                if ((Board[0, 0] == Board[0, 1] && Board[0, 1] == Board[0, 2] && Board[0, 2] == "X") || // horizontal
                     (Board[1, 0] == Board[1, 1] && Board[1, 1] == Board[1, 2] && Board[1, 2] == "X") ||
                     (Board[2, 0] == Board[2, 1] && Board[2, 1] == Board[2, 2] && Board[2, 2] == "X") ||
 
-                    (Board[0, 0] == Board[1, 0] && Board[1, 0] == Board[2, 0] && Board[2, 0] == "X") ||
+                    (Board[0, 0] == Board[1, 0] && Board[1, 0] == Board[2, 0] && Board[2, 0] == "X") || //vertical
                     (Board[0, 1] == Board[1, 1] && Board[1, 1] == Board[2, 1] && Board[2, 1] == "X") ||
                     (Board[0, 2] == Board[1, 2] && Board[1, 1] == Board[2, 2] && Board[2, 2] == "X") ||
 
-                    (Board[0, 0] == Board[1, 1] && Board[1, 1] == Board[2, 2] && Board[2, 2] == "X") ||
+                    (Board[0, 0] == Board[1, 1] && Board[1, 1] == Board[2, 2] && Board[2, 2] == "X") || //diagonal
                     (Board[2, 0] == Board[1, 1] && Board[1, 1] == Board[0, 2] && Board[0, 2] == "X"))
                 {
                     Console.WriteLine("YOU WON! ");
@@ -150,15 +150,15 @@ namespace THREE_IN_A_ROW
                     isWinner = true;
                 }
                 else if (
-                    (Board[0, 0] == Board[0, 1] && Board[0, 1] == Board[0, 2] && Board[0, 2] == "O") ||
+                    (Board[0, 0] == Board[0, 1] && Board[0, 1] == Board[0, 2] && Board[0, 2] == "O") || //horizontal
                     (Board[1, 0] == Board[1, 1] && Board[1, 1] == Board[1, 2] && Board[1, 2] == "O") ||
                     (Board[2, 0] == Board[2, 1] && Board[2, 1] == Board[2, 2] && Board[2, 2] == "O") ||
 
-                    (Board[0, 0] == Board[1, 0] && Board[1, 0] == Board[2, 0] && Board[2, 0] == "O") ||
+                    (Board[0, 0] == Board[1, 0] && Board[1, 0] == Board[2, 0] && Board[2, 0] == "O") || //vertical
                     (Board[0, 1] == Board[1, 1] && Board[1, 1] == Board[2, 1] && Board[2, 1] == "O") ||
                     (Board[0, 2] == Board[1, 2] && Board[1, 1] == Board[2, 2] && Board[2, 2] == "O") ||
 
-                    (Board[0, 0] == Board[1, 1] && Board[1, 1] == Board[2, 2] && Board[2, 2] == "O") ||
+                    (Board[0, 0] == Board[1, 1] && Board[1, 1] == Board[2, 2] && Board[2, 2] == "O") || //diagonal
                     (Board[2, 0] == Board[1, 1] && Board[1, 1] == Board[0, 2] && Board[0, 2] == "O"))
                 {
                     DisplayBoard(Board);
