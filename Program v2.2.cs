@@ -192,7 +192,7 @@ namespace THREE_IN_A_ROW
                     }
                 }
             }
-            Console.ReadLine(); //end
+            Console.ReadLine(); //end 
         }
     }
 }
